@@ -1,0 +1,15 @@
+echo "Enter the limit : "
+read n
+a=0
+b=1
+sum=0
+echo $a
+echo $b
+for (( i=0; i<=n; i++ ))
+ do
+   sum=$(( a + b ))
+   a=$b
+   b=$sum
+  n=$((n+1))
+  echo "$sum"
+ done
