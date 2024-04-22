@@ -1,0 +1,12 @@
+year=$(date +%Y)
+echo $year
+a=$(( year % 4))
+b=$(( year % 400))
+c=$(( year % 100))
+echo $m $n $o
+if [ $a -eq 0 -a $b -ne 0 -o $c -eq 0 ]
+ then
+   echo "it is leap year"
+else
+   echo "it is not leap year"
+fi
