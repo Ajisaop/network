@@ -1,0 +1,16 @@
+echo "Enter a string:"
+read a
+org=$a
+rev=0
+while [ $a -gt 0 ]
+do
+num=$(( $a % 10 ))
+rev=$(( $rev * 10 + $num))
+a=$(( $a / 10 ))
+done
+if [ $org -eq $rev ]
+then
+  echo "$n is palindrome"
+else
+ echo "$n is not palindrome"
+fi
