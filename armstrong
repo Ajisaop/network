@@ -1,0 +1,16 @@
+echo "Enter a number:"
+read a
+org=$a
+rev=0
+while [ $a -gt 0 ]
+do
+num=$(( $a % 10 ))
+rev=$(( $rev  + $num ** 3))
+a=$(( $a / 10 ))
+done
+if [ $org -eq $rev ]
+then
+  echo "$n is arm"
+else
+ echo "$n is not arm"
+fi
